@@ -1,0 +1,91 @@
+
+
+
+
+Test Strategy for United Airlines 
+Flights From Chicago 
+ 
+ 
+Scope and Objectives 
+The objective of  this testing effort is to validate the correct functionality and optimal user experience for the “Flights from Chicago” section within the United Airlines Booking and travel information web portal. Testing will cover the following functionalities:
+A. Search 
+B. Daily Fares Lookup for flights to San Francisco from Chicago
+C. Information Panel (airport information for example, ad-placements, weather etc.) 
+D. Table of other popular deals on flights from Chicago to San Francisco
+
+The success of the testing effort will be determined by the achieved test coverage as well as the achieved automation percentage.
+
+
+Test Approach 
+The testing effort will align with the development process (e.g. Agile, waterfall)  in terms of  execution of test runs, test case creation, test automation development and other QA tasks.  The strategy will include  a combination of  manual and automated testing.  Manual testing will be focused greatly  on UI/UX while Automation will be created for backend testing, performance testing, boundary value testing.
+
+Test Types 
+—Functional testing.
+—Performance testing.
+—Security testing. Might require PCI compliance guidelines for CC checkout.
+—UX testing.
+—Negative testing including boundary testing.
+—Unit testing( developers)
+
+Roles and Responsibilites 
+—QA Engineer/Tester: Responsible for the creation of test cases, execution of test runs, ticket creation for bugs, retesting of fixed issues, UI validation, automation script creation.
+—QA Lead: Responsible for Definition of testing strategy, scheduling of QA engineer tasks, performance analysis of the testing effort.
+—Developers: Responsible for the development of the code to be tested as well as the development of Unit Testing scripts.
+—Project Manager: Responsible for the organization of the development effort following the selected methodology( e.g. Agile). The project manager is responsible for the definition of the scope of each print, which will be used by the QA team too coordinate their testing efforts.
+
+Testing Tools 
+
+—Documentation Tools ( Like Confluence)
+—Test case management tool ( Test Rail, Qmetry)
+—Automation Tools( Katalon, Selenium).
+—Mobile Emulation Tools ( Android Studio,Corellium,etc)
+—Postman for testing APIS
+
+Supported OS/Browsers 
+
+—All major browsers are assumed:
+	—Chrome, Firefox, Safari, Edge on Windows, Mac, Android and IOS
+
+Reporting 
+
+—For each sprint, a report will be generated for each QA Engineer for the amount of tickets closed as well as created during the sprint.
+—Test Run Execution Report and Passed/Failed reporting for test cases.
+—Automation Percentage report from total test cases
+
+
+TEST CASES
+Functionality: information Panel
+
+Test Case 1: Verify “Upcoming Flights” section on Information Panel
+Preconditions: None
+Steps: 
+1. On the main page, go to the information panel on the top right.
+2. Verify the design as per FIGMA.
+3. Verify the next flights leaving Chicago are shown. 
+4. If there are seats available, a “Book Now” button should be displayed to the right of the flight information as per FIGMA design.
+
+Expected Results
+1.The design Matches FIGMA.
+2.The next 4 flight are shown.  The following information is shown for each flight: flight number, airport, departure time, arrival time.
+3. The book now button takes you to the flight booking page.
+
+
+Test Case 2: Weather Widget
+Preconditions: None
+Steps:
+1. On the information panel, go to the weather section.
+2. Verify the current Chicago weather is shown
+3. On the Top right, click on the temperature scale button.
+
+Expected Result
+1. The design matches FIGMA
+2. The Chicago weather is shown and it matches accuweather( Check on Page or Test API)
+3. Clicking on the temperature scale button switches from Fahrenheit to Celsius Correctly.
+4
+
+
+
+
+
+
+
